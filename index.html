@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <h1 id="title">CALCULADORA</h1>
+    <form name="Calculadora" id="calc">
+      <table border="3">
+          <tr>
+              <td colspan="5">
+                <input type="text" name="txt" value="0" disabled>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <input type="button" value="1" onclick="ingresarNumero(this.value)">
+                  <input type="button" value="2" onclick="ingresarNumero(this.value)">
+                  <input type="button" value="3" onclick="ingresarNumero(this.value)">
+                  <input type="button" value="+" onclick="ingresarOperacion(this.value)">
+                  <input type="button" value="-" onclick="ingresarOperacion(this.value)">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                <input type="button" value="4" onclick="ingresarNumero(this.value)">
+                <input type="button" value="5" onclick="ingresarNumero(this.value)">
+                <input type="button" value="6" onclick="ingresarNumero(this.value)">
+                <input type="button" value="*" onclick="ingresarOperacion(this.value)">
+                <input type="button" value="/" onclick="ingresarOperacion(this.value)">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                <input type="button" value="7" onclick="ingresarNumero(this.value)">
+                <input type="button" value="8" onclick="ingresarNumero(this.value)">
+                <input type="button" value="9" onclick="ingresarNumero(this.value)">
+                <input type="button" value="^" onclick="ingresarOperacion('**')">
+                <input type="button" value="√" onclick="raiz()">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                <input type="button" value="0" onclick="ingresarNumero(this.value)">
+                <input type="button" value="." onclick="ingresarNumero(this.value)">
+                <input type="button" value="C" onclick="limpiar()">
+                <input  type="button" value=" = " onclick="resultado()">
+                
+              </td>
+          </tr>
+      </table>
+    </form>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
